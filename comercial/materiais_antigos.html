@@ -1,0 +1,111 @@
+echo <<< _END
+<li class="formpedido_col_esq">
+<label for="material_pedido">Material: </label>
+<select name="material_pedido">
+_END;
+
+if (isset($_POST['material_pedido']) && $_POST['material_pedido'] =='raflex transp'){
+echo <<< _END
+<option value="raflex transp" selected >raflex transp</option>
+<option value="papel couche adesivo">papel couche adesivo</option>
+<option value="bopp metalizado">bopp metalizado</option>
+<option value="raflex branco">raflex branco</option>
+<option value="polietileno transparente">polietileno transparente</option>
+<option value="polietileno branco">polietileno branco</option>
+<option value="outros">outros</option>
+</select>
+</li>
+_END;
+}
+elseif (isset($_POST['material_pedido']) && $_POST['material_pedido'] =='papel couche adesivo'){
+echo <<< _END
+<option value="raflex transp" >raflex transp</option>
+<option value="papel couche adesivo" selected >papel couche adesivo</option>
+<option value="bopp metalizado">bopp metalizado</option>
+<option value="raflex branco">raflex branco</option>
+<option value="polietileno transparente">polietileno transparente</option>
+<option value="polietileno branco">polietileno branco</option>
+<option value="outros">outros</option>
+</select>
+</li>
+_END;
+}
+elseif (isset($_POST['material_pedido']) && $_POST['material_pedido'] =='bopp metalizado'){
+echo <<< _END
+<option value="raflex transp" >raflex transp</option>
+<option value="papel couche adesivo" >papel couche adesivo</option>
+<option value="bopp metalizado" selected >bopp metalizado</option>
+<option value="raflex branco">raflex branco</option>
+<option value="polietileno transparente">polietileno transparente</option>
+<option value="polietileno branco">polietileno branco</option>
+<option value="outros">outros</option>
+</select>
+</li>
+_END;
+}
+elseif (isset($_POST['material_pedido']) && $_POST['material_pedido'] =='raflex branco'){
+echo <<< _END
+<option value="raflex transp" >raflex transp</option>
+<option value="papel couche adesivo" >papel couche adesivo</option>
+<option value="bopp metalizado" >bopp metalizado</option>
+<option value="raflex branco" selected >raflex branco</option>
+<option value="polietileno transparente">polietileno transparente</option>
+<option value="polietileno branco">polietileno branco</option>
+<option value="outros">outros</option>
+</select>
+</li>
+_END;
+}
+elseif (isset($_POST['material_pedido']) && $_POST['material_pedido'] =='polietileno transparente'){
+echo <<< _END
+<option value="raflex transp" >raflex transp</option>
+<option value="papel couche adesivo" >papel couche adesivo</option>
+<option value="bopp metalizado" >bopp metalizado</option>
+<option value="raflex branco" >raflex branco</option>
+<option value="polietileno transparente" selected >polietileno transparente</option>
+<option value="polietileno branco">polietileno branco</option>
+<option value="outros">outros</option>
+</select>
+</li>
+_END;
+}
+elseif (isset($_POST['material_pedido']) && $_POST['material_pedido'] =='polietileno branco'){
+echo <<< _END
+<option value="raflex transp" >raflex transp</option>
+<option value="papel couche adesivo" >papel couche adesivo</option>
+<option value="bopp metalizado" >bopp metalizado</option>
+<option value="raflex branco" >raflex branco</option>
+<option value="polietileno transparente" >polietileno transparente</option>
+<option value="polietileno branco" selected >polietileno branco</option>
+<option value="outros">outros</option>
+</select>
+</li>
+_END;
+}
+elseif (isset($_POST['material_pedido']) && $_POST['material_pedido'] =='outros'){
+echo <<< _END
+<option value="raflex transp" >raflex transp</option>
+<option value="papel couche adesivo" >papel couche adesivo</option>
+<option value="bopp metalizado" >bopp metalizado</option>
+<option value="raflex branco" >raflex branco</option>
+<option value="polietileno transparente" >polietileno transparente</option>
+<option value="polietileno branco" >polietileno branco</option>
+<option value="outros" selected >outros</option>
+</select>
+</li>
+_END;
+}
+else{
+echo <<< _END
+<option value="raflex transp" >raflex transp</option>
+<option value="papel couche adesivo">papel couche adesivo</option>
+<option value="bopp metalizado">bopp metalizado</option>
+<option value="raflex branco">raflex branco</option>
+<option value="polietileno transparente">polietileno transparente</option>
+<option value="polietileno branco">polietileno branco</option>
+<option value="outros">outros</option>
+</select>
+</li>
+_END;
+	
+}
